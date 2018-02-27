@@ -4,154 +4,962 @@
     <meta charset="UTF-8">
     <title>音达入职申请</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/index.css">
-    <script src="js/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/double-date.css">
+    <link rel="stylesheet" href="css/number.css">
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/double-date.js"></script>
     <script src="js/index.js"></script>
     <style>
         body{background:#f0f0f0;}
     </style>
 </head>
 <body>
-    <div class="header2">
-        <ul class="left">
+    <div class="header2" style="padding:0 20px;box-sizing:border-box;">
+        <ul class="left" style="width:371px;">
             <li><img src="img/logo.png" alt="" style="margin-bottom:10px;"></li>
-            <li>音达办公系统</li>
+            <li>上海音达科技在线简历</li>
         </ul>
         <ul class="right">
             <li style="margin-right:10px;"><div id="show"></div></li>
         </ul>
     </div>
-    <div class="contain2">
-        <div class="boxx">
-            <div class="title">员工入职申请表</div>
-            <div class="jiben">
-                <ul>
-                    <li>姓名：</li>
-                    <li><input type="text"></li>
-                </ul>
-                <ul>
-                    <li>籍贯：</li>
-                    <li><input type="text"></li>
-                </ul>
-                <ul>
-                    <li>身份证号：</li>
-                    <li><input type="text"></li>
-                </ul>
-                <ul>
-                    <li>性别：</li>
-                    <li><input type="text"></li>
-                </ul>
-                <ul>
-                    <li>政治面貌：</li>
-                    <li>
-                        <select name="" id="">
-                            <option value="">男</option>
-                            <option value="">女</option>
-                        </select>
-                    </li>
-                </ul>
-                <ul>
-                    <li>最高学历：</li>
-                    <li><input type="text"></li>
-                </ul>
-                <ul>
-                    <li>家庭住址：</li>
-                    <li><input type="text"></li>
-                </ul>
-                <ul>
-                    <li>民族：</li>
-                    <li><input type="text"></li>
-                </ul>
-                <ul>
-                    <li>专业：</li>
-                    <li><input type="text"></li>
-                </ul>
-                <ul>
-                    <li>毕业院校：</li>
-                    <li><input type="text"></li>
-                </ul>
-                <ul>
-                    <li>毕业时间：</li>
-                    <li><input type="text"></li>
-                </ul>
+    <div class="contain_number">
+        <div class="left">
+            <ul>
+                <li class="active">个人信息</li>
+                <li>亲属信息</li>
+                <li>教育经历</li>
+                <li>证书技能</li>
+                <li>工作经历</li>
+                <li>实习生填写专区</li>
+            </ul>
+        </div>
+        <div class="right">
+                <div class="conn" style="height:793px;">
+                            <ul>个人信息</ul>
+                            <ul>
+                                <li>
+                                    <span>姓名：</span>
+                                    <span><input type="text"></span>
+                                    <span class="bixuan"> *</span>
+                                </li>
+                                <li>
+                                    <span>性别：</span>
+                                    <span><input type="radio" name="sex" checked style="width:20px;"></span>
+                                    <span style="margin-right:5px;">男</span>
+                                    <span><input type="radio" name="sex" style="width:20px;"></span>
+                                    <span>女</span>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <span>出生年月：</span>
+                                    <span>
+                                        <div class="outer clearfix">
+                                            <div class="date date1 fl" id="from">
+                                                <input type="text" class="date-check"/>
+                                            </div>
+                                            <div class="date fr" id="to" style="display:none;">
+                                                <input type="text" class="date-check"/>
+                                            </div>
+                                        </div>
+                                    </span>
+                                    <span class="bixuan"> *</span>
+                                </li>
+                                <li>
+                                    <span>工作年限：</span>
+                                    <span>
+                                        <select>
+                                            <option value="">请选择</option>
+                                            <option value="">实习生</option>
+                                            <option value="">1年</option>
+                                            <option value="">2年</option>
+                                            <option value="">3年</option>
+                                            <option value="">4-5年</option>
+                                            <option value="">6-8年</option>
+                                            <option value="">9年以上</option>
+                                        </select>
+                                    </span>
+                                    <span class="bixuan"> *</span>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <span>微信号：</span>
+                                    <span><input type="text"></span>
+                                    <span class="bixuan"> *</span>
+                                </li>
+                                <li>
+                                    <span>身份证号：</span>
+                                    <span><input type="text"></span>
+                                    <span class="bixuan"> *</span>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <span>E_mail：</span>
+                                    <span><input type="text"></span>
+                                    <span class="bixuan"> *</span>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <span>联系电话：</span>
+                                    <span><input type="text"></span>
+                                    <span class="bixuan"> *</span>
+                                </li>
+                                <li>
+                                    <span>手机系统：</span>
+                                    <span>
+                                        <select>
+                                            <option value="">请选择</option>
+                                            <option value="">andorid</option>
+                                            <option value="">ios</option>
+                                            <option value="">windows</option>
+                                            <option value="">其他</option>
+                                            <option value="">非智能手机</option>
+                                        </select>
+                                    </span>
+                                    <span class="bixuan"> *</span>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li style="width:100%;">
+                                    <span>目前住址：</span>
+                                    <span><input type="text" style="width:368px;"></span>
+                                    <span class="bixuan"> * 例：上海市国定东路200号</span>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li style="width:100%;">
+                                    <span>家庭住址：</span>
+                                    <span><input type="text" style="width:368px;"></span>
+                                    <span class="bixuan"> * 例：上海市国定东路200号</span>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li style="width:auto;">
+                                    <span>户籍地：</span>
+                                    <div class="outer" style="width:619px;margin-top:3px;text-align:left;">
+                                        <select name="province" id="province">
+                                            <option value="请选择">请选择</option>
+                                        </select>
+                                        <select name="city" id="city">
+                                            <option value="请选择">请选择</option>
+                                        </select>
+                                        <select name="town" id="town">
+                                            <option value="请选择">请选择</option>
+                                        </select>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <span>紧急联系人:</span>
+                                    <span><input type="text"></span>
+                                    <span class="bixuan"> *</span>
+                                </li>
+                                <li>
+                                    <span>联系方式：</span>
+                                    <span><input type="text"></span>
+                                    <span class="bixuan"> *</span>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <span>政治面貌：</span>
+                                    <span><input type="text"></span>
+                                    <span class="bixuan"> *</span>
+                                </li>
+                                <li>
+                                    <span>名族：</span>
+                                    <span><input type="text"></span>
+                                    <span class="bixuan"> *</span>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <span>最高学历：</span>
+                                    <span>
+                                            <select>
+                                                <option value="">请选择</option>
+                                                <option value="">初中</option>
+                                                <option value="">中专</option>
+                                                <option value="">中技</option>
+                                                <option value="">高中</option>
+                                                <option value="">大专</option>
+                                                <option value="">本科</option>
+                                                <option value="">MBA</option>
+                                                <option value="">硕士</option>
+                                                <option value="">博士</option>
+                                                <option value="">其他</option>
+                                            </select>
+                                        </span>
+                                    <span class="bixuan"> *</span>
+                                </li>
+                                <li>
+                                        <span>毕业时间：</span>
+                                        <span>
+                                            <div class="outer clearfix">
+                                                <div class="date date1 fl" id="from1">
+                                                    <input type="text" class="date-check"/>
+                                                </div>
+                                                <div class="date fr" id="to1" style="display:none;">
+                                                    <input type="text" class="date-check"/>
+                                                </div>
+                                            </div>
+                                        </span>
+                                        <span class="bixuan"> *</span>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li style="width:100%;">
+                                    <span>特长/爱好：</span>
+                                    <span><input type="text" style="width:522px;"></span>
+                                    <span class="bixuan"> * </span>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <span>到岗时间：</span>
+                                    <span>
+                                            <select>
+                                                <option value="">请选择</option>
+                                                <option value="">马上</option>
+                                                <option value="">一周</option>
+                                                <option value="">两周</option>
+                                                <option value="">其他,请填写其他信息</option>
+                                            </select>
+                                    </span>
+                                    <span class="bixuan"> *</span>
+                                </li>
+                                <li>
+                                    <span>其他时间：</span>
+                                    <span><input type="text"></span>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <span style="width:140px;">离职证明/三方协议：</span>
+                                    <span>
+                                            <select>
+                                                <option value="">请选择</option>
+                                                <option value="">有</option>
+                                                <option value="">无</option>
+                                            </select>
+                                    </span>
+                                    <span class="bixuan"> *</span>
+                                </li>
+                                <li>
+                                    <span>休假目的地:</span>
+                                    <span><input type="text"></span>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <span>期望月薪：</span>
+                                    <span><input type="text"></span>
+                                    <span class="bixuan"> *</span>
+                                </li>
+                                <li>
+                                    <span>理由：</span>
+                                    <span><input type="text"></span>
+                                    <span class="bixuan"> *</span>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <span>笔记本：</span>
+                                    <span>
+                                            <select>
+                                                <option value="">请选择</option>
+                                                <option value="">有</option>
+                                                <option value="">无</option>
+                                            </select>
+                                    </span>
+                                    <span class="bixuan"> *</span>
+                                </li>
+                            </ul>
+                            <ul class="true" style="border:0;">
+                                <li style="float:left;">提交</li>
+                                <li style="float:right;" onclick="javascript:top.window.close();">关闭</li>
+                            </ul>
+                            <ul style="border:0;text-align:center;position:absolute;bottom:30px;">
+                                <li style="width:100%;">
+                                    ©2018 www.yindatech.com All rights reserved   |   音达科技集团   版权所有
+                                </li>
+                            </ul>
+                </div>
+                <div class="conn conn2" style="height:300px;">
+                    <ul>亲属信息</ul>
+                    <ul>
+                        <li>
+                            <span>关系：</span>
+                            <span><input type="text"></span>
+                        </li>
+                        <li>
+                            <span>工作单位：</span>
+                            <span><input type="text"></span>
+                        </li>
+                        <li>
+                            <span>联系方式：</span>
+                            <span><input type="text"></span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <span>关系：</span>
+                            <span><input type="text"></span>
+                        </li>
+                        <li>
+                            <span>工作单位：</span>
+                            <span><input type="text"></span>
+                        </li>
+                        <li>
+                            <span>联系方式：</span>
+                            <span><input type="text"></span>
+                        </li>
+                    </ul>
+                    <ul class="true" style="border:0;">
+                        <li style="float:left;">提交</li>
+                        <li style="float:right;" onclick="javascript:top.window.close();">关闭</li>
+                    </ul>
+                    <ul style="border:0;text-align:center;position:absolute;bottom:30px;">
+                        <li style="width:100%;">
+                            ©2018 www.yindatech.com All rights reserved   |   音达科技集团   版权所有
+                        </li>
+                    </ul>
+                </div>
+                <div class="conn" style="height:420px;">
+                    <ul>教育经历</ul>
+                    <ul style="border:0;">
+                        <li>
+                            <span>开始时间：</span>
+                            <span>
+                                        <div class="outer clearfix">
+                                            <div class="date date1 fl">
+                                                <input type="text" class="date-check"/>
+                                            </div>
+                                            <div class="date fr" style="display:none;">
+                                                <input type="text" class="date-check"/>
+                                            </div>
+                                        </div>
+                            </span>
+                        </li>
+                        <li>
+                            <span>结束时间：</span>
+                            <span>
+                                        <div class="outer clearfix">
+                                            <div class="date date1 fl">
+                                                <input type="text" class="date-check"/>
+                                            </div>
+                                            <div class="date fr" style="display:none;">
+                                                <input type="text" class="date-check"/>
+                                            </div>
+                                        </div>
+                            </span>
+                        </li>
+                    </ul>
+                    <ul style="border-bottom-style:solid;">
+                        <li>
+                            <span>学校：</span>
+                            <span><input type="text"></span>
+                        </li>
+                        <li>
+                            <span>专业：</span>
+                            <span><input type="text"></span>
+                        </li>
+                    </ul>
+                    <ul style="border:0;">
+                        <li>
+                            <span>开始时间：</span>
+                            <span>
+                                        <div class="outer clearfix">
+                                            <div class="date date1 fl">
+                                                <input type="text" class="date-check"/>
+                                            </div>
+                                            <div class="date fr" style="display:none;">
+                                                <input type="text" class="date-check"/>
+                                            </div>
+                                        </div>
+                            </span>
+                        </li>
+                        <li>
+                            <span>结束时间：</span>
+                            <span>
+                                        <div class="outer clearfix">
+                                            <div class="date date1 fl">
+                                                <input type="text" class="date-check"/>
+                                            </div>
+                                            <div class="date fr" style="display:none;">
+                                                <input type="text" class="date-check"/>
+                                            </div>
+                                        </div>
+                            </span>
+                        </li>
+                    </ul>
+                    <ul style="border-bottom-style:solid;">
+                        <li>
+                            <span>学校：</span>
+                            <span><input type="text"></span>
+                        </li>
+                        <li>
+                            <span>专业：</span>
+                            <span><input type="text"></span>
+                        </li>
+                    </ul>
+                    <ul style="border:0;">
+                        <li>
+                            <span>开始时间：</span>
+                            <span>
+                                        <div class="outer clearfix">
+                                            <div class="date date1 fl">
+                                                <input type="text" class="date-check"/>
+                                            </div>
+                                            <div class="date fr" style="display:none;">
+                                                <input type="text" class="date-check"/>
+                                            </div>
+                                        </div>
+                            </span>
+                        </li>
+                        <li>
+                            <span>结束时间：</span>
+                            <span>
+                                        <div class="outer clearfix">
+                                            <div class="date date1 fl">
+                                                <input type="text" class="date-check"/>
+                                            </div>
+                                            <div class="date fr" style="display:none;">
+                                                <input type="text" class="date-check"/>
+                                            </div>
+                                        </div>
+                            </span>
+                        </li>
+                    </ul>
+                    <ul style="border-bottom-style:solid;">
+                        <li>
+                            <span>学校：</span>
+                            <span><input type="text"></span>
+                        </li>
+                        <li>
+                            <span>专业：</span>
+                            <span><input type="text"></span>
+                        </li>
+                    </ul>
+                    <ul class="true" style="border:0;">
+                        <li style="float:left;">提交</li>
+                        <li style="float:right;" onclick="javascript:top.window.close();">关闭</li>
+                    </ul>
+                    <ul style="border:0;text-align:center;position:absolute;bottom:30px;">
+                        <li style="width:100%;">
+                            ©2018 www.yindatech.com All rights reserved   |   音达科技集团   版权所有
+                        </li>
+                    </ul>
+                </div>
+                <div class="conn" style="height:420px;">
+                        <ul>证书技能</ul>
+                        <ul>
+                            <li>
+                                <span>英语水平：</span>
+                                <span>
+                                    <select name="">
+                                        <option value="">无</option>
+                                        <option value="">四级</option>
+                                        <option value="">六级</option>
+                                        <option value="">其他(请在说明中填写)</option>
+                                    </select>
+                                </span>
+                            </li>
+                            <li>
+                                    <span>说明：</span>
+                                    <span>
+                                        <input type="text">
+                                    </span>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <span>计算机证书:</span>
+                                <span>
+                                        <input type="text">
+                                 </span>
+                            </li>
+                            <li>
+                                <span>其他证书：</span>
+                                <span>
+                                        <input type="text">
+                                 </span>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <span>通信认证：</span>
+                                <span>
+                                        <select name="">
+                                            <option value="">无</option>
+                                            <option value="">华为</option>
+                                            <option value="">中兴</option>
+                                            <option value="">诺基亚</option>
+                                            <option value="">其他</option>
+                                        </select>
+                                </span>
+                            </li>
+                            <li>
+                                <span>证书名称：</span>
+                                <span>
+                                        <input type="text">
+                                </span>
+                            </li>
+                        </ul>
+                        <ul style="border:0;">
+                            <li>
+                                <span>驾照：</span>
+                                <span>
+                                        <select name="">
+                                            <option value="">无</option>
+                                            <option value="">C1</option>
+                                            <option value="">C2</option>
+                                            <option value="">C3</option>
+                                            <option value="">B1</option>
+                                            <option value="">B2</option>
+                                            <option value="">B3</option>
+                                            <option value="">A1</option>
+                                            <option value="">A2</option>
+                                            <option value="">A3</option>
+                                        </select>
+                                </span>
+                            </li>
+                            <li>
+                                <span>领证时间：</span>
+                                <span><input type="text"></span>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <span>实际驾龄：</span>
+                                <span>
+                                        <select name="">
+                                            <option value="">小于3个月</option>
+                                            <option value="">3—6月</option>
+                                            <option value="">半年-一年</option>
+                                            <option value="">一年以上</option>
+                                        </select>
+                                </span>
+                            </li>
+                            <li>
+                                <span>实际里程：</span>
+                                <span>
+                                        <select name="">
+                                            <option value="">1000公里以下</option>
+                                            <option value="">1000-3999公里</option>
+                                            <option value="">4000-9999公里</option>
+                                            <option value="">10000公里以上</option>
+                                        </select>
+                                </span>
+                            </li>
+                        </ul>
+                        <ul class="true" style="border:0;">
+                            <li style="float:left;">提交</li>
+                            <li style="float:right;" onclick="javascript:top.window.close();">关闭</li>
+                        </ul>
+                        <ul style="border:0;text-align:center;position:absolute;bottom:30px;">
+                            <li style="width:100%;">
+                                ©2018 www.yindatech.com All rights reserved   |   音达科技集团   版权所有
+                            </li>
+                        </ul>
             </div>
-            <div class="family">
-                <div class="left">
-                    <span>家庭主成员：</span>
-                    <table class="table table-bordered table1">
-                        <thead>
-                        <tr style="background:#f9f9f9">
-                            <th>姓名</th>
-                            <th>关系</th>
-                            <th>工作单位</th>
-                            <th>联系方式</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tbody>
-                        <tr>
-                            <td><input type="text"></td>
-                            <td><input type="text"></td>
-                            <td><input type="text"></td>
-                            <td><input type="text"></td>
-                        </tr>
-                        <tr>
-                            <td><input type="text"></td>
-                            <td><input type="text"></td>
-                            <td><input type="text"></td>
-                            <td><input type="text"></td>
-                        </tr>
-                        <tr>
-                            <td><input type="text"></td>
-                            <td><input type="text"></td>
-                            <td><input type="text"></td>
-                            <td><input type="text"></td>
-                        </tr>
-                        <tr>
-                            <td><input type="text"></td>
-                            <td><input type="text"></td>
-                            <td><input type="text"></td>
-                            <td><input type="text"></td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="right2">
-                    <span>工作经历：</span>
-                    <table class="table table-bordered table1">
-                        <thead>
-                        <tr style="background:#f9f9f9">
-                            <th>起止时间</th>
-                            <th>工作单位</th>
-                            <th>职位</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td><input type="text"></td>
-                            <td><input type="text"></td>
-                            <td><input type="text"></td>
-                        </tr>
-                        <tr>
-                            <td><input type="text"></td>
-                            <td><input type="text"></td>
-                            <td><input type="text"></td>
-                        </tr>
-                        <tr>
-                            <td><input type="text"></td>
-                            <td><input type="text"></td>
-                            <td><input type="text"></td>
-                        </tr>
-                        <tr>
-                            <td><input type="text"></td>
-                            <td><input type="text"></td>
-                            <td><input type="text"></td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
+                <div class="conn" style="height:650px;">
+                    <ul>工作经历</ul>
+                    <ul style="border:0;">
+                        <li>
+                            <span>开始时间：</span>
+                            <span>
+                                            <div class="outer clearfix">
+                                                <div class="date date1 fl">
+                                                    <input type="text" class="date-check"/>
+                                                </div>
+                                                <div class="date fr" style="display:none;">
+                                                    <input type="text" class="date-check"/>
+                                                </div>
+                                            </div>
+                            </span>
+                        </li>
+                        <li>
+                            <span>结束时间：</span>
+                            <span>
+                                            <div class="outer clearfix">
+                                                <div class="date date1 fl">
+                                                    <input type="text" class="date-check"/>
+                                                </div>
+                                                <div class="date fr" style="display:none;">
+                                                    <input type="text" class="date-check"/>
+                                                </div>
+                                            </div>
+                            </span>
+                        </li>
+                    </ul>
+                    <ul style="border:0;">
+                        <li>
+                            <span>公司名称：</span>
+                            <span><input type="text"></span>
+                        </li>
+                        <li>
+                            <span>公司性质：</span>
+                            <span>
+                                <select name="">
+                                    <option value="">请选择</option>
+                                    <option value="">外资</option>
+                                    <option value="">合资</option>
+                                    <option value="">国企</option>
+                                    <option value="">民营</option>
+                                    <option value="">其他</option>
+                                </select>
+                            </span>
+                        </li>
+                    </ul>
+                    <ul style="border:0;">
+                        <li>
+                            <span>职位：</span>
+                            <span><input type="text"></span>
+                        </li>
+                        <li>
+                            <span>职位性质：</span>
+                            <span>
+                                <select name="">
+                                    <option value="">请选择</option>
+                                    <option value="">工程实施</option>
+                                    <option value="">网络优化</option>
+                                    <option value="">网络规划</option>
+                                    <option value="">研发</option>
+                                    <option value="">其他</option>
+                                </select>
+                            </span>
+                        </li>
+                    </ul>
+                    <ul style="border-bottom-style:solid;">
+                        <li>
+                            <span>指责描述：</span>
+                            <span><input type="text"></span>
+                        </li>
+                        <li>
+                            <span>年收入：</span>
+                            <span><input type="text"></span>
+                        </li>
+                    </ul>
+                    <ul style="border:0;">
+                        <li>
+                            <span>开始时间：</span>
+                            <span>
+                                            <div class="outer clearfix">
+                                                <div class="date date1 fl">
+                                                    <input type="text" class="date-check"/>
+                                                </div>
+                                                <div class="date fr" style="display:none;">
+                                                    <input type="text" class="date-check"/>
+                                                </div>
+                                            </div>
+                            </span>
+                        </li>
+                        <li>
+                            <span>结束时间：</span>
+                            <span>
+                                            <div class="outer clearfix">
+                                                <div class="date date1 fl">
+                                                    <input type="text" class="date-check"/>
+                                                </div>
+                                                <div class="date fr" style="display:none;">
+                                                    <input type="text" class="date-check"/>
+                                                </div>
+                                            </div>
+                            </span>
+                        </li>
+                    </ul>
+                    <ul style="border:0;">
+                        <li>
+                            <span>公司名称：</span>
+                            <span><input type="text"></span>
+                        </li>
+                        <li>
+                            <span>公司性质：</span>
+                            <span>
+                                <select name="">
+                                    <option value="">请选择</option>
+                                    <option value="">外资</option>
+                                    <option value="">合资</option>
+                                    <option value="">国企</option>
+                                    <option value="">民营</option>
+                                    <option value="">其他</option>
+                                </select>
+                            </span>
+                        </li>
+                    </ul>
+                    <ul style="border:0;">
+                        <li>
+                            <span>职位：</span>
+                            <span><input type="text"></span>
+                        </li>
+                        <li>
+                            <span>职位性质：</span>
+                            <span>
+                                <select name="">
+                                    <option value="">请选择</option>
+                                    <option value="">工程实施</option>
+                                    <option value="">网络优化</option>
+                                    <option value="">网络规划</option>
+                                    <option value="">研发</option>
+                                    <option value="">其他</option>
+                                </select>
+                            </span>
+                        </li>
+                    </ul>
+                    <ul style="border-bottom-style:solid;">
+                        <li>
+                            <span>指责描述：</span>
+                            <span><input type="text"></span>
+                        </li>
+                        <li>
+                            <span>年收入：</span>
+                            <span><input type="text"></span>
+                        </li>
+                    </ul>
+                    <ul style="border:0;">
+                        <li>
+                            <span>开始时间：</span>
+                            <span>
+                                            <div class="outer clearfix">
+                                                <div class="date date1 fl">
+                                                    <input type="text" class="date-check"/>
+                                                </div>
+                                                <div class="date fr" style="display:none;">
+                                                    <input type="text" class="date-check"/>
+                                                </div>
+                                            </div>
+                            </span>
+                        </li>
+                        <li>
+                            <span>结束时间：</span>
+                            <span>
+                                            <div class="outer clearfix">
+                                                <div class="date date1 fl">
+                                                    <input type="text" class="date-check"/>
+                                                </div>
+                                                <div class="date fr" style="display:none;">
+                                                    <input type="text" class="date-check"/>
+                                                </div>
+                                            </div>
+                            </span>
+                        </li>
+                    </ul>
+                    <ul style="border:0;">
+                        <li>
+                            <span>公司名称：</span>
+                            <span><input type="text"></span>
+                        </li>
+                        <li>
+                            <span>公司性质：</span>
+                            <span>
+                                <select name="">
+                                    <option value="">请选择</option>
+                                    <option value="">外资</option>
+                                    <option value="">合资</option>
+                                    <option value="">国企</option>
+                                    <option value="">民营</option>
+                                    <option value="">其他</option>
+                                </select>
+                            </span>
+                        </li>
+                    </ul>
+                    <ul style="border:0;">
+                        <li>
+                            <span>职位：</span>
+                            <span><input type="text"></span>
+                        </li>
+                        <li>
+                            <span>职位性质：</span>
+                            <span>
+                                <select name="">
+                                    <option value="">请选择</option>
+                                    <option value="">工程实施</option>
+                                    <option value="">网络优化</option>
+                                    <option value="">网络规划</option>
+                                    <option value="">研发</option>
+                                    <option value="">其他</option>
+                                </select>
+                            </span>
+                        </li>
+                    </ul>
+                    <ul style="border-bottom-style:solid;">
+                        <li>
+                            <span>指责描述：</span>
+                            <span><input type="text"></span>
+                        </li>
+                        <li>
+                            <span>年收入：</span>
+                            <span><input type="text"></span>
+                        </li>
+                    </ul>
+                    <ul class="true" style="border:0;">
+                        <li style="float:left;">提交</li>
+                        <li style="float:right;" onclick="javascript:top.window.close();">关闭</li>
+                    </ul>
+                    <ul style="border:0;text-align:center;position:absolute;bottom:30px;">
+                        <li style="width:100%;">
+                            ©2018 www.yindatech.com All rights reserved   |   音达科技集团   版权所有
+                        </li>
+                    </ul>
+            </div>
+                <div class="conn conn3" style="height:800px;">
+                        <ul>实习生填写专区</ul>
+                        <ul>
+                            <li style="width:100%;">
+                                <span>能否适应经常出差：</span>
+                                <span>
+                                    <select name="">
+                                        <option value="">请选择</option>
+                                        <option value="">能</option>
+                                        <option value="">有困难</option>
+                                        <option value="">不能</option>
+                                    </select>
+                                </span>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li style="width:100%;">
+                                <span>出差时间不能超过：</span>
+                                <span>
+                                        <select name="">
+                                            <option value="">请选择</option>
+                                            <option value="">一周</option>
+                                            <option value="">两周</option>
+                                            <option value="">一个月</option>
+                                            <option value="">三个月</option>
+                                            <option value="">六个月</option>
+                                            <option value="">听从安排</option>
+                                        </select>
+                                </span>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li style="width:100%;">
+                                <span>家人是否支持出差：</span>
+                                <span>
+                                            <select name="">
+                                                <option value="">请选择</option>
+                                                <option value="">是</option>
+                                                <option value="">否</option>
+                                            </select>
+                                </span>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li style="width:100%;">
+                                <span>性格自我评估：</span>
+                                <span>
+                                       <select name="">
+                                                    <option value="">请选择</option>
+                                                    <option value="">外向型</option>
+                                                    <option value="">内向型</option>
+                                                    <option value="">偏外向</option>
+                                                    <option value="">偏内向</option>
+                                                    <option value="">不确定</option>
+                                       </select>
+                                </span>
+                            </li>
+                        </ul>
+                        <ul style="height:130px;">
+                            <li style="width:100%;height:100px;">
+                                <span style="width:80px;">获奖经历：</span>
+                                <span>
+                                     <textarea name="" style="width:600px;height:100px;max-height:120px;margin-top:5px;resize:vertical;" ></textarea>
+                                </span>
+                            </li>
+                        </ul>
+                        <ul style="height:130px;">
+                            <li style="width:100%;height:100px;">
+                                <span style="width:80px;">职业规划：</span>
+                                <span>
+                                         <textarea name="" style="width:600px;height:100px;max-height:120px;margin-top:5px;resize:vertical;" ></textarea>
+                                    </span>
+                            </li>
+                        </ul>
+
+                        <ul>
+                            <li>
+                                <span>希望得到培训：</span>
+                                <span>
+                                    <select name="" id="">
+                                        <option value="">本职专业</option>
+                                        <option value="">实践</option>
+                                        <option value="">理论</option>
+                                        <option value="">拓展</option>
+                                    </select>
+                                </span>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <span>返校日期：</span>
+                                <span>
+                                        <div class="outer clearfix">
+                                            <div class="date date1 fl">
+                                                <input type="text" class="date-check"/>
+                                            </div>
+                                            <div class="date fr" style="display:none;">
+                                                <input type="text" class="date-check"/>
+                                            </div>
+                                        </div>
+                                </span>
+                            </li>
+                            <li>
+                                <span>返校周期：</span>
+                                <span>
+                                     <select name="">
+                                         <option value="">无</option>
+                                         <option value="">一周</option>
+                                         <option value="">两周</option>
+                                         <option value="">一月</option>
+                                         <option value="">一月以上</option>
+                                     </select>
+                                </span>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <span>是否考研计划：</span>
+                                <span>
+                                      <select name="">
+                                          <option value="">无</option>
+                                          <option value="">有</option>
+                                      </select>
+                                </span>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <span>辅导员：</span>
+                                <span><input type="text"></span>
+                            </li>
+                            <li>
+                                <span>联系方式：</span>
+                                <span><input type="text"></span>
+                            </li>
+                        </ul>
+                        <ul class="true" style="border:0;">
+                            <li style="float:left;">提交</li>
+                            <li style="float:right;" onclick="javascript:top.window.close();">关闭</li>
+                        </ul>
+                        <ul style="border:0;text-align:center;position:absolute;bottom:30px;">
+                            <li style="width:100%;">
+                                ©2018 www.yindatech.com All rights reserved   |   音达科技集团   版权所有
+                            </li>
+                        </ul>
             </div>
         </div>
     </div>
 </body>
+<script>
+//    alert("提示：请认真填写在线简历相关信息，如果填写错误，可能会直接被驳回，影响你整个入职流程的办理，请予以重视并认真填写！");
+</script>
+<script src="js/area.js"></script>
+<script src="js/select.js"></script>
 </html>

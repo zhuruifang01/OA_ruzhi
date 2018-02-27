@@ -18,8 +18,6 @@ $(function(){
     setInterval(function(){
         // 时钟
         $('#show').html(currentTime);
-        // 定时刷新
-        timerFunction();
     },1000);
     //布局：
     var body=$("body").height();
@@ -32,4 +30,14 @@ $(function(){
         $(".contain2 .left ul").removeClass("active").eq(index).addClass("active");
         $(".contain2 .right iframe").css("display","none").eq(index).css("display","block");
     });
+
+/*员工提交简历*/
+    $(".contain_number").css("height",body-140+'px');
+
+    $(".contain_number .left li").click(function () {
+        var index=$(this).index(".contain_number .left li");
+        $(".contain_number .left li").removeClass("active").eq(index).addClass("active");
+        $(".contain_number .right .conn").css("display","none").eq(index).css("display",'block');
+    });
+
 });

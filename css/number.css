@@ -1,0 +1,148 @@
+html,body{margin:0;padding:0;width:100%;height:100%;overflow:hidden;}
+.body{
+    width:100%;height:100%;
+    background-image:url("../img/bg.png");
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+}
+.body .contain,.contain .box{
+    width:400px;height:380px;background:#30426E;border-radius:10px;
+    position:absolute;top:0;bottom:0;left:0;right:0;margin:auto;
+}
+.body .contain .box{background:#F6F6F6;margin-top:10px;}
+.contain .box .title{width:100%;height:80px;border-bottom:2px solid #b0b0b0;}
+.title .logo,.title .tit{width:100%;height:40px;line-height:40px;text-align:center;color:#153579;font-size:25px;position:relative;}
+.title .logo img{position:absolute;left:0;right:0;top:8px;margin:auto;}
+ul,li{margin:0;padding:0;list-style:none;}
+.conn  li{width:250px;height:40px;line-height:40px;margin:0 auto;color:#b0b0b0;font-size:16px;}
+.conn li input{width:100%;height:38px;border:1px solid #b0b0b0;font-size:16px;padding-left:8px;box-sizing:border-box;}
+.conn li:first-child{margin-top:10px;}
+.conn li:last-child{background:#0a2e8b;color:#fff;font-size:20px;text-align:center;margin-top:40px;}
+
+.header2{width:100%;height:60px;line-height:60px;background:#fff;overflow:hidden;}
+.header2 .left,.header2 .right{width:270px;height:60px;float:left;}
+.header2 .right{width:300px;}
+.header2 .right{float:right;}
+.header2 ul li{float:left;color:#153579;font-size:22px;}
+.header2 ul li:first-child{float:left;}
+.header2 ul li:last-child{float:right;}
+.header2 ul li img{margin-left:5px;}
+.header2 .right li:last-child a{display:block;width:80px;height:100%;float:right;font-size:16px;text-decoration:none;}
+.header2 .right li:last-child a span{float:left;height:60px;line-height:60px;position:relative;}
+.header2 .right li:last-child a span:last-child{float:right;margin-right:20px;color:red;}
+.header2 .right li:last-child a span img{position:absolute;top:0;bottom:0;margin:auto;}
+.contain2{height:500px;}
+.contain2 .left{width:130px;height:100%;background:#0a2e8b;float:left;}
+.contain2 .right{width:100px;height:100%;float:left;padding-left:10px;padding-top:10px;box-sizing:border-box;}
+.contain2 .left ul{width:100%;height:180px;margin-top:5px;padding-top:40px;box-sizing:border-box;cursor:pointer;}
+.contain2 .left ul li{margin:0 auto;color:#fff;font-size:20px;line-height:50px;text-align:center;}
+.contain2 .left .active{background:#3d709e;}
+.contain2 .right iframe{display:none;}
+.contain2 .right iframe:first-child{display:block;}
+
+.email{width:650px;height:500px;border:2px solid #e0e0e0;margin:0 auto;margin-top:5%;border-radius:10px;}
+.email ul{width:100%;height:60px;line-height:60px;}
+.email ul:first-child{margin-top:10px;}
+.email ul li{float:left;}
+.email ul li:first-child{width:100px;text-align:center;line-height:60px;}
+.email .ii li input{width:500px;height:30px;border:2px solid #ddd;background:none;border-radius:5px;}
+.email ul:last-child .true{
+    width:100px;height:40px;line-height:40px;text-align:center;background:#3d709e;text-align:center;color:#fff;
+    float:right;border-radius:8px;margin-right:43px;margin-top:20px;cursor:pointer;
+}
+.email .textarea{
+    width:100%;height:170px;line-height:140px;overflow:hidden;margin-bottom:20px;
+}
+.email .textarea li{height:100%;}
+.email .textarea textarea{width:500px;height:95%;border:2px solid #ddd;background:none;border-radius:5px;}
+.uploader{
+    position:relative;
+    display:inline-block;
+    overflow:hidden;
+    cursor:default;
+    padding:0;
+    margin:10px 0px;
+    border-radius:5px;
+    border:2px solid #ddd;
+    background:none;
+}
+.filename{
+    float:left;
+    display:inline-block;
+    outline:0 none;
+    height:32px;
+    width:180px;
+    margin:0;
+    padding:8px 10px;
+    overflow:hidden;
+    cursor:default;
+    border:0px solid #ddd;
+    text-shadow:1px 1px 0px #fff;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    border-radius:5px;
+    background:none;
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fafafa', endColorstr='#f5f5f5',GradientType=0);
+    box-shadow:0px 0px 1px #fff inset;
+    box-sizing:border-box;
+}
+.uploader input[type=file]{
+    position:absolute;
+    top:0; right:0; bottom:0;
+    border:0;
+    padding:0; margin:0;
+    height:30px;
+    cursor:pointer;
+    filter:alpha(opacity=0);
+    opacity:0;
+}
+.email #xinxi{width:100%;height:50px;line-height:50px;overflow:hidden;}
+.email #xinxi ul{width:35%;height:100%;float:left;margin:0;}
+.email #xinxi ul li{width:90px;float:left;line-height:50px;}
+.email #xinxi ul li:first-child{width:89px;text-align:right;}
+.email #xinxi ul li input{width:200px;height:30px;background:none;border:2px solid #ddd;border-radius:5px;}
+
+.box1{width:95%;margin:0 auto;margin-top:30px;background:#fff;}
+.table thead tr th{text-align:center;}
+.table tbody tr td:last-child{padding-right:0;margin-right:0;width:175px;}
+.table tbody tr td a{
+    display:block;width:50px;height:30px;line-height:30px;background:cornflowerblue;border-radius:5px;float:left;
+    font-size:16px;color:#fff;margin-right:5px;text-align:center;text-decoration:none;
+}
+.table tbody tr td a:last-child{background:orangered;}
+
+/*员工提交简历页面*/
+/*个人信息*/
+.contain_number{
+    width:900px;height:500px;margin:0 auto;overflow:scroll;
+    margin-top:50px;
+}
+.contain_number .left{width:164px;height:300px;float:left;}
+.contain_number .left ul li{width:160px;height:35px;line-height:35px;margin-bottom:5px;background:#e4f4fd;border:1px solid #cee8fb;text-align:center;cursor:pointer;}
+.contain_number .left ul li:hover{background:#65a8ed;}
+.contain_number .left .active{background:#65a8ed;}
+.contain_number .right{width:730px;height:100%;float:right;overflow:scroll;}
+.contain_number .conn{width:100%;height:1000px;position:relative;display:none;border:1px solid #a7b7ce;background:#fff;}
+.contain_number .conn:first-child{display:block;}
+.contain_number .conn ul{width:100%;height:40px;line-height:40px;border-bottom:1px dotted #c5c5c5;}
+.contain_number .conn ul:first-child{background:#f9fafb;text-align:center;}
+.contain_number .conn ul li{background:none;width:50%;height:100%;margin:0;padding-left:30px;font-size:14px;color:#000;box-sizing:border-box;float:left;}
+.contain_number .conn ul li span{float:left;line-height:40px;text-align:left;}
+.contain_number .conn ul li .bixuan{color:red;line-height:40px;margin-left:3px;}
+.contain_number .conn ul li input{height:28px;margin-top:5px;font-size:14px;}
+.contain_number .conn ul li span select{margin:0 3px;}
+.contain_number .conn ul li span:first-child {width:81px;}
+.contain_number .conn .true{width:150px;height:30px;margin:0 auto;}
+.contain_number .conn .true li{width:60px;height:30px;line-height:30px;background:#e4f4fd;border:1px solid #cee8fb;cursor:pointer;text-align:center;padding:0;border-radius:5px;margin:10px 0;}
+/*日历*/
+.outer{width:157px;height:30px;margin:0;padding:0;margin-top:5px;}
+.outer .date{width:100%;height:100%;margin:0;padding:0;}
+.outer .date .date-check{width:100%;height:100%;margin:0;padding:0;position:absolute;top:0;left:0;}
+.outer .date .today{display:none;}
+.outer .date .header{height:22px;overflow:hidden;}
+/*亲属信息*/
+.contain_number .conn2 ul li{width:35%;padding-left:5px;}
+.contain_number .conn2 ul li:first-child{width:30%;}
+.contain_number .conn2 ul li span:first-child{width:auto;}
+/*实习生*/
+.contain_number .conn3 ul li span:first-child {width:130px;}
