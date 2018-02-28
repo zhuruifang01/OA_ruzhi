@@ -114,14 +114,14 @@ ul,li{margin:0;padding:0;list-style:none;}
 /*员工提交简历页面*/
 /*个人信息*/
 .contain_number{
-    width:900px;height:500px;margin:0 auto;overflow:hidden;
-    margin-top:50px;
+    width:1000px;height:500px;margin:0 auto;overflow:hidden;
+    margin-top:50px;font-size:14px;
 }
 .contain_number .left{width:164px;height:300px;float:left;}
 .contain_number .left ul li{width:160px;height:35px;line-height:35px;margin-bottom:5px;background:#e4f4fd;border:1px solid #cee8fb;text-align:center;cursor:pointer;}
 .contain_number .left ul li:hover{background:#65a8ed;}
 .contain_number .left .active{background:#65a8ed;}
-.contain_number .right{width:700px;height:100%;float:right;overflow:scroll;}
+.contain_number .right{width:820px;height:100%;float:right;overflow:scroll;}
 .contain_number .conn{width:100%;height:1000px;position:relative;display:none;border:1px solid #a7b7ce;background:#fff;}
 .contain_number .conn:first-child{display:block;}
 .contain_number .conn ul{width:100%;height:40px;line-height:40px;border-bottom:1px dotted #c5c5c5;}
