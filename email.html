@@ -5,9 +5,43 @@
     <title>发邮件</title>
     <link rel="stylesheet" href="css/index.css">
     <script src="js/jquery.min.js"></script>
+    <style>
+        .offer{width:100%;height:50px;overflow:hidden;padding:0 20px;box-sizing:border-box;margin-top:5px;}
+        .offer ul{width:33.33%;height:100%;float:left;}
+        .offer ul li{float:left;}
+        .offer ul li:first-child{width:50px;}
+        .offer ul li input{width:130px;height:25px;border-radius:5px;border:2px solid #e0e0e0;background:none;}
+        .offer2 ul{width:50%;}
+        .offer2 ul li:first-child{width:80px;}
+        .offer2 ul li input{width:160px;}
+    </style>
 </head>
 <body>
-    <div class="email">
+    <div class="email" style="height:330px;">
+        <div class="offer">
+            <ul style="margin:0;">
+                <li>姓名：</li>
+                <li><input type="text"></li>
+            </ul>
+            <ul>
+                <li style="width:65px;">工作地：</li>
+                <li><input type="text"></li>
+            </ul>
+            <ul>
+                <li style="width:60px;text-align:right;">职位：</li>
+                <li><input type="text"></li>
+            </ul>
+        </div>
+        <div class="offer offer2" style="margin-bottom:20px;">
+            <ul style="margin:0;">
+                <li>入职时间：</li>
+                <li><input type="text"></li>
+            </ul>
+            <ul style="margin:0;">
+                <li>邮件时间：</li>
+                <li><input type="text"></li>
+            </ul>
+        </div>
         <ul class="ii">
             <li>个人邮箱：</li>
             <li><input type="text"></li>
@@ -15,15 +49,6 @@
         <ul class="ii">
             <li>公司邮箱：</li>
             <li><input type="text"></li>
-        </ul>
-        <ul>
-            <li>添加附件：</li>
-            <li>
-                <div class="uploader blue">
-                    <input type="text" class="filename" readonly/>
-                    <input type="file" size="30"/>
-                </div>
-            </li>
         </ul>
         <ul>
             <li class="true">发送</li>
